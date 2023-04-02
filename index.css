@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-shadow: 0 2.1875rem 3.4375rem;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 62.5rem;
+    min-height: 62.5rem;
+    background-color: #eee;
+    margin: 3.125rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.leftSide {
+    position: relative;
+    background-color: #ca561b;
+    padding: 2.5rem;
+}
+
+.rightSide {
+    position: relative;
+    background-color: #eee;
+    padding: 2.5rem;
+}
+
+.profile {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1.25rem;
+    border-bottom: 1px solid #fff;
+}
+
+.profile img {
+    width: 12.5rem;
+    height: auto;
+    border-radius: 50%;
+    margin: .625rem;
+}
+
+.profile h2 {
+    color: #fff;
+    font-size: 2em;
+    margin-top: 1.25rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+    padding: .3125rem;
+    border-radius: .3125rem;
+    letter-spacing: .1875rem;
+}
+
+.profile h2 span {
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+.contactInfo {
+    padding-top: 2.5rem;
+}
+
+.contactInfo .title {
+    color: #fff;
+    margin-top: 1.25rem;
+}
+
+.contactInfo .ul {
+    position: relative;
+}
+
+.contactInfo ul li {
+    position: relative;
+    list-style-type: none;
+    margin: .625rem 0;
+}
+
+.contactInfo ul li .material-icons {
+    display: inline-block;
+    width: 1.875rem;
+    font-size: 1.125rem;
+    color: #fff;
+}
+
+.contactInfo ul li .text {
+    color: #fff;
+}
+
+.contactInfo ul li a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.contactInfo.educationExp li {
+    margin-bottom: .9375rem;
+}
+
+.contactInfo.educationExp h5 {
+    color: #fc8c55;
+}
+
+.contactInfo.educationExp h4 {
+    color: white;
+}
+
+.contactInfo.pc li {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.about {
+    margin: 3.125rem;
+}
+
+.about:last-child {
+    margin-bottom: 0;
+}
+
+.title2 {
+    color: #ca561b;
+    margin-bottom: .625rem;
+}
+
+p {
+    color: #333;
+}
+
+.about .box {
+    display: flex;
+    margin: 1.25rem 0;
+}
+
+.about .box .year-company {
+    min-width: 9.375rem;
+}
+
+.about .box .year-company h5 {
+    color: darkgray;
+}
+
+.about .box .text h4 {
+    color: #ca561b;
+    font-size: 1rem;
+}
+
+.interest ul {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.interest ul li {
+    list-style: none;
+    color: #333;
+    margin: 10px 0;
+}
+
+.interest ul li .material-icons {
+    color: #ca561b;
+    font-size: 1.25rem;
+}
+
+a.PDF {
+    line-height: 200px;
+    margin: auto auto auto 30px;
+    background-color: #ca561b;
+    padding: .3125rem;
+    border-radius: .125rem;
+}
+
+a {
+    color: #eee;
+}
+
+@media (max-width:1000px) {
+    .container {
+        margin: 10px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width:600px) {
+    .about .box {
+        flex-direction: column;
+    }
+    .about .box .year-company {
+        margin-bottom: .3125rem;
+    }
+}
